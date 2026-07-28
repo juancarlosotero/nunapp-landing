@@ -125,10 +125,12 @@ export default function Home() {
             <Image src="/icon.png" alt="Nunapp" width={32} height={32} className="rounded-xl" />
             <span className="text-lg font-bold tracking-tight" style={{ color: "var(--color-night)" }}>Nunapp</span>
           </div>
-          <div className="flex items-center gap-6">
-            <Link href="/privacy" className="text-sm opacity-60 hover:opacity-100 transition-opacity">{c.nav.privacy}</Link>
-            <Link href="/terms" className="text-sm opacity-60 hover:opacity-100 transition-opacity">{c.nav.terms}</Link>
-            <Link href="/research" className="text-sm opacity-60 hover:opacity-100 transition-opacity">{c.nav.research}</Link>
+          <div className="flex items-center gap-5">
+            <div className="hidden sm:flex items-center gap-5">
+              <Link href="/privacy" className="text-sm opacity-60 hover:opacity-100 transition-opacity">{c.nav.privacy}</Link>
+              <Link href="/terms" className="text-sm opacity-60 hover:opacity-100 transition-opacity">{c.nav.terms}</Link>
+              <Link href="/research" className="text-sm opacity-60 hover:opacity-100 transition-opacity">{c.nav.research}</Link>
+            </div>
             <button onClick={() => setLang(lang === "en" ? "es" : "en")}
               className="text-xs font-semibold px-3 py-1.5 rounded-full border transition-all"
               style={{ borderColor: "var(--color-salmon)", color: "var(--color-salmon)" }}>

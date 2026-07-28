@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const t = {
   en: {
-    nav: { privacy: "Privacy", terms: "Terms" },
+    nav: { privacy: "Privacy", terms: "Terms", research: "Research" },
     hero: {
       badge: "Sound Therapy · Tinnitus Relief",
       title: "Nunapp",
@@ -56,7 +56,7 @@ const t = {
     },
   },
   es: {
-    nav: { privacy: "Privacidad", terms: "Términos" },
+    nav: { privacy: "Privacidad", terms: "Términos", research: "Investigación" },
     hero: {
       badge: "Terapia de Sonido · Alivio del Tinnitus",
       title: "Nunapp",
@@ -128,6 +128,7 @@ export default function Home() {
           <div className="flex items-center gap-6">
             <Link href="/privacy" className="text-sm opacity-60 hover:opacity-100 transition-opacity">{c.nav.privacy}</Link>
             <Link href="/terms" className="text-sm opacity-60 hover:opacity-100 transition-opacity">{c.nav.terms}</Link>
+            <Link href="/research" className="text-sm opacity-60 hover:opacity-100 transition-opacity">{c.nav.research}</Link>
             <button onClick={() => setLang(lang === "en" ? "es" : "en")}
               className="text-xs font-semibold px-3 py-1.5 rounded-full border transition-all"
               style={{ borderColor: "var(--color-salmon)", color: "var(--color-salmon)" }}>
@@ -275,6 +276,7 @@ export default function Home() {
           <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-xs" style={{ color: "rgba(255,255,255,0.4)" }}>
             <Link href="/privacy" className="hover:text-white transition-colors">{c.nav.privacy}</Link>
             <Link href="/terms" className="hover:text-white transition-colors">{c.nav.terms}</Link>
+            <Link href="/research" className="hover:text-white transition-colors">{c.nav.research}</Link>
             <a href="mailto:support@emunacloud.ca" className="hover:text-white transition-colors">support@emunacloud.ca</a>
             <a href="https://www.emunacloud.ca" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">emunacloud.ca</a>
           </div>

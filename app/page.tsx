@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const t = {
   en: {
-    nav: { privacy: "Privacy", terms: "Terms", research: "Research" },
+    nav: { privacy: "Privacy", terms: "Terms", research: "Research", support: "Support" },
     hero: {
       badge: "Sound Therapy · Tinnitus Relief",
       title: "Nunapp",
@@ -56,7 +56,7 @@ const t = {
     },
   },
   es: {
-    nav: { privacy: "Privacidad", terms: "Términos", research: "Investigación" },
+    nav: { privacy: "Privacidad", terms: "Términos", research: "Investigación", support: "Soporte" },
     hero: {
       badge: "Terapia de Sonido · Alivio del Tinnitus",
       title: "Nunapp",
@@ -279,6 +279,7 @@ export default function Home() {
             <Link href="/privacy" className="hover:text-white transition-colors">{c.nav.privacy}</Link>
             <Link href="/terms" className="hover:text-white transition-colors">{c.nav.terms}</Link>
             <Link href="/research" className="hover:text-white transition-colors">{c.nav.research}</Link>
+            <Link href="/support" className="hover:text-white transition-colors">{c.nav.support}</Link>
             <a href="mailto:support@emunacloud.ca" className="hover:text-white transition-colors">support@emunacloud.ca</a>
             <a href="https://www.emunacloud.ca" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">emunacloud.ca</a>
           </div>

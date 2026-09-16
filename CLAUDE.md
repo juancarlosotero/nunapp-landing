@@ -48,10 +48,10 @@ vercel --prod --yes --scope sg-360
 | `nunapp.rigsapanama.com` | `nunapp-web` | Flutter web app (NO tocar con CLI desde este repo) |
 | `www.emunacloud.ca` | `emunacloud` | Sitio corporativo Emuna Cloud |
 
-## Links pendientes (App Store / Google Play)
-En `app/page.tsx`, los botones de descarga apuntan a `#`. Reemplazar cuando se publique la app:
-- App Store: `https://apps.apple.com/app/nunapp/id[ID]`
-- Google Play: `https://play.google.com/store/apps/details?id=ca.emunacloud.nunapp`
+## Links de descarga
+En `app/page.tsx`:
+- App Store: `https://apps.apple.com/app/nunapp-tinnitus-relief/id6794888509` (publicado ✅)
+- Google Play: pendiente, el botón sigue apuntando a `#`. Reemplazar con `https://play.google.com/store/apps/details?id=ca.emunacloud.nunapp` cuando se publique.
 
 ## Aviso legal importante
 Nunapp **no es un dispositivo médico**. Este aviso debe mantenerse en footer, /privacy y /terms. Es requisito de App Store y Google Play.
